@@ -1,0 +1,109 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.0;
+    background-color: white;
+    font-size: 110%;
+    margin: 0%;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	height: 90vh;
+	background-color: #A2DBDB;
+	box-shadow: -3px 4px 5px 3px #A2CEDB;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 3%;
+}
+header a {
+	margin: 15px;
+	text-decoration: none;  
+	color: white;
+	text-transform: lowercase;
+}
+.tituloHeader {
+	position: relative;
+    text-transform: uppercase;
+    font-family: consolas;
+	letter-spacing: 5px;
+	margin: 0;
+	padding: 0;
+	color: transparent;
+}
+.tituloHeader::before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	overflow: hidden;
+	border-right: 1px solid #000;
+	/*Começo da animação*/animation: type 8s steps(23) infinite;
+	white-space: nowrap;
+}
+/*Coloca realmente a animação para acontecer*/
+@keyframes type {
+	0% {
+	    width: 0%
+	}
+	50% {
+	    width: 100%
+	}
+	100% {
+	    width: 0%
+	}
+}
+
+/*NÃO ALTEREI AINDA*/
+.sobre {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+.caixaTexto {
+        flex: 1;
+        margin: 2%;
+        opacity: 1;
+        padding: 1%;
+        box-shadow: -4px 8px 24px rgba(0,0,0,.4);
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 20px;
+    }
+        .botao {
+        background-color:  #A2CEDB;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        margin-top: 1%;
+        /* float: right; */
+    }
+    footer {
+        height: 210px;
+        background-color: #A2CEDB;
+        box-shadow: 3px -4px 5px 3px #A2CEDB;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    footer h4 {
+        color: white;
+        line-height: 38px;
+    }
+
+    footer picture {
+        display: flex;
+        margin-right: 3%;
+        margin-top: 1%;
+        flex-direction: column;
+    }
