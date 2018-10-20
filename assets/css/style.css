@@ -55,20 +55,21 @@ header a {
 	    width: 0%
 	}
 }
-
-/*NÃO ALTEREI AINDA*/
 .sobre {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-    }
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
 .caixaTexto {
-        flex: 1;
-        margin: 2%;
-        opacity: 1;
-        padding: 1%;
-        box-shadow: -4px 8px 24px rgba(0,0,0,.4);
-    }
+    flex: 1;
+    margin: 2%;
+    opacity: 1;
+    padding: 1%;
+    box-shadow: -4px 8px 24px rgba(0,0,0,.4);
+}
+
+
+    /*NÃO ALTEREI AINDA*/
     .email {
         display: flex;
         flex-direction: column;
