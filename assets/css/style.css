@@ -40,7 +40,7 @@ header a {
 	color: #000;
 	overflow: hidden;
 	border-right: 1px solid #000;
-	/*Começo da animação*/animation: type 8s steps(23) infinite;
+	/*Começo da animação e definir o tempo*/animation: type 8s steps(23) infinite;
 	white-space: nowrap;
 }
 /*Coloca realmente a animação para acontecer*/
@@ -67,9 +67,28 @@ header a {
     padding: 1%;
     box-shadow: -4px 8px 24px rgba(0,0,0,.4);
 }
+/*Responsive*/
+@media only screen and (min-width:500px) and (max-width:800px){
+    
+    body {
+        font-size: 90%;
+    }
+    header {
+        height: 70vh;
+    }
+}
+@media only screen and (max-width:500px){
+    
+    body {
+        font-size: 73%;
+    }
+    header {
+        height: 40vh;
+    }
+}
 
 
-    /*NÃO ALTEREI AINDA*/
+    /*NÃO ALTEREI AINDA
     .email {
         display: flex;
         flex-direction: column;
@@ -86,7 +105,7 @@ header a {
         display: block;
         font-size: 16px;
         margin-top: 1%;
-        /* float: right; */
+        /* float: right; *tem uma barra/
     }
     footer {
         height: 210px;
@@ -108,3 +127,5 @@ header a {
         margin-top: 1%;
         flex-direction: column;
     }
+
+    */
