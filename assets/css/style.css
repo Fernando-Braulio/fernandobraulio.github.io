@@ -103,29 +103,35 @@ header a {
     margin-top: 1%;
     float: right; 
 }
-
-
-
-        /*NÃO ALTEREI AINDA
-    footer {
-        height: 210px;
-        background-color: #A2CEDB;
-        box-shadow: 3px -4px 5px 3px #A2CEDB;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-    }
-    footer h4 {
-        color: white;
-        line-height: 38px;
-    }
-
-    footer picture {
-        display: flex;
-        margin-right: 3%;
-        margin-top: 1%;
-        flex-direction: column;
-    }
-
-    */
+footer {
+    height: 210px;
+    background-color: #A2CEDB;
+    box-shadow: 3px -4px 5px 3px #A2CEDB;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer h4 {
+    color: white;
+    line-height: 38px;
+}
+.blog {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 26px;
+    margin-left: 1%;
+}
+.blog h3 {
+    margin-bottom: 0px;
+}
+.blog a {
+    text-decoration: none;
+    color: white;
+}
+picture{
+    display: flex;
+    margin-right: 3%;
+    margin-top: 1%;
+    flex-direction: column;
+}
