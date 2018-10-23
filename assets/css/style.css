@@ -21,7 +21,7 @@ header a {
 	color: white;
 	text-transform: lowercase;
 }
-.tituloHeader {
+.titleHeader {
 	position: relative;
     text-transform: uppercase;
     font-family: consolas;
@@ -30,7 +30,7 @@ header a {
 	padding: 0;
 	color: transparent;
 }
-.tituloHeader::before{
+.titleHeader::before{
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
@@ -40,10 +40,10 @@ header a {
 	color: #000;
 	overflow: hidden;
 	border-right: 1px solid #000;
-	/*Começo da animação e definir o tempo*/animation: type 8s steps(23) infinite;
+	/*Start animation and set the time*/animation: type 8s steps(23) infinite;
 	white-space: nowrap;
 }
-/*Coloca realmente a animação para acontecer*/
+/*Make an adventure to happen*/
 @keyframes type {
 	0% {
 	    width: 0%
@@ -55,12 +55,12 @@ header a {
 	    width: 0%
 	}
 }
-.sobre {
+.about {
     display: flex;
     flex-direction: row;
     position: relative;
 }
-.caixaTexto {
+.textBox {
     flex: 1;
     margin: 2%;
     opacity: 1;
@@ -86,27 +86,27 @@ header a {
         height: 40vh;
     }
 }
+.email {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 20px;
+}
+.button {
+    background-color:  #A2CEDB;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 1%;
+    float: right; 
+}
 
 
-    /*NÃO ALTEREI AINDA
-    .email {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Courier New', Courier, monospace;
-        line-height: 20px;
-    }
-        .botao {
-        background-color:  #A2CEDB;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: block;
-        font-size: 16px;
-        margin-top: 1%;
-        /* float: right; *tem uma barra/
-    }
+
+        /*NÃO ALTEREI AINDA
     footer {
         height: 210px;
         background-color: #A2CEDB;
