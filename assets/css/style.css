@@ -65,38 +65,16 @@ p a{
 }
 .textBox {
     flex: 1;
-    margin: 2%;
+    margin: 0.8%;
     opacity: 1;
     padding: 1%;
     box-shadow: -4px 8px 24px rgba(0,0,0,.4);
-}
-/*Responsive*/
-@media only screen and (min-width:500px) and (max-width:800px){
-    
-    body {
-        font-size: 90%;
-    }
-    header {
-        height: 70vh;
-    }
-}
-@media only screen and (max-width:500px){
-    
-    body {
-        /*font-size: 73%;*/
-        font-size : 60%;
-    }
-    header {
-        height: 50vh;
-    }
-    footer h4{
-        display: none;
-    }
+    text-align: justify;
 }
 .email {
     display: flex;
     flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
+    /*font-family: 'Courier New', Courier, monospace;*/
     line-height: 20px;
 }
 .button {
@@ -152,9 +130,53 @@ picture{
 .copy{
     text-align: center;
     background-color: #99C2CF;
+    box-shadow: 3px -4px 5px 3px #99C2CF;
     font-size: 90%;
     font-family: 'Courier New', Courier, monospace;
 }
 a:hover{
     text-decoration: underline;
+}
+/*Responsive*/
+@media only screen and (min-width:500px) and (max-width:800px){
+    
+    body {
+        font-size: 90%;
+    }
+    header {
+        height: 70vh;
+    }
+    .textBox{
+        width: 100%;
+        float: none;
+    }
+}
+@media only screen and (max-width:500px){
+    
+    body {
+        /*font-size: 73%;*/
+        font-size : 60%;
+    }
+    header {
+        height: 50vh;
+    }
+    footer h4{
+        display: none;
+    }
+    .about{
+        display: inline;
+    }
+    .textBox{
+        width: 100%;
+        float: none;
+    }
+    .button{
+        padding: 8px 13px;
+        font-size: 12px;
+        float: none;
+    }
+    .email{
+        line-height: 10px;
+        display: inline-flex;
+    }
 }
