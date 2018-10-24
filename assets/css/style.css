@@ -84,10 +84,10 @@ p a{
     
     body {
         /*font-size: 73%;*/
-        font-size : 12px;
+        font-size : 60%;
     }
     header {
-        height: 40vh;
+        height: 50vh;
     }
     footer h4{
         display: none;
@@ -125,7 +125,6 @@ footer h4 {
     color: white;
     line-height: 38px;
 }
-
 .blog {
     display: flex;
     flex-direction: column;
