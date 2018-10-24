@@ -40,7 +40,7 @@ header a {
 	color: #000;
 	overflow: hidden;
 	border-right: 1px solid #000;
-	/*Start animation and set the time*/animation: type 8s steps(23) infinite;
+	/*Start animation and set the time*/animation: type 10s steps(23) infinite;
 	white-space: nowrap;
 }
 /*Make an adventure to happen*/
@@ -54,6 +54,9 @@ header a {
 	100% {
 	    width: 0%
 	}
+}
+p a{
+    text-decoration: none;
 }
 .about {
     display: flex;
@@ -80,10 +83,14 @@ header a {
 @media only screen and (max-width:500px){
     
     body {
-        font-size: 73%;
+        /*font-size: 73%;*/
+        font-size : 12px;
     }
     header {
         height: 40vh;
+    }
+    footer h4{
+        display: none;
     }
 }
 .email {
@@ -103,8 +110,11 @@ header a {
     margin-top: 1%;
     float: right; 
 }
+.button:hover{
+    background-color: #99C2CF;
+}
 footer {
-    height: 210px;
+    height: 150px;
     background-color: #A2CEDB;
     box-shadow: 3px -4px 5px 3px #A2CEDB;
     display: flex;
@@ -115,6 +125,7 @@ footer h4 {
     color: white;
     line-height: 38px;
 }
+
 .blog {
     display: flex;
     flex-direction: column;
@@ -134,4 +145,17 @@ picture{
     margin-right: 3%;
     margin-top: 1%;
     flex-direction: column;
+}
+.img_footer{
+    margin-top: 10%;
+    height: 40px;
+}
+.copy{
+    text-align: center;
+    background-color: #99C2CF;
+    font-size: 90%;
+    font-family: 'Courier New', Courier, monospace;
+}
+a:hover{
+    text-decoration: underline;
 }
