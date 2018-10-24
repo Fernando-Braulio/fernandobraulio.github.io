@@ -138,7 +138,7 @@ a:hover{
     text-decoration: underline;
 }
 /*Responsive*/
-@media only screen and (min-width:500px) and (max-width:800px){
+@media only screen and (min-width:600px) and (max-width:800px){
     
     body {
         font-size: 90%;
@@ -151,14 +151,14 @@ a:hover{
         float: none;
     }
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:600px){
     
     body {
         /*font-size: 73%;*/
         font-size : 60%;
     }
     header {
-        height: 50vh;
+        height: 55vh;
     }
     footer h4{
         display: none;
