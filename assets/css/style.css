@@ -98,6 +98,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 3%;
 }
 footer h4 {
     color: white;
