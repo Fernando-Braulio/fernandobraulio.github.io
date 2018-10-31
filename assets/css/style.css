@@ -100,10 +100,6 @@ footer {
     justify-content: space-between;
     margin-top: 3%;
 }
-footer h4 {
-    color: white;
-    line-height: 38px;
-}
 .blog {
     display: flex;
     flex-direction: column;
@@ -118,7 +114,7 @@ footer h4 {
     text-decoration: none;
     color: white;
 }
-picture{
+.picture_footer{
     display: flex;
     margin-right: 3%;
     margin-top: 1%;
@@ -138,6 +134,22 @@ picture{
 a:hover{
     text-decoration: underline;
 }
+
+/*Portfolio version 1*/
+.portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.portfolio img{
+    flex-basis: 25%;
+    max-width: 25%;
+    margin: 1%;
+    box-shadow: -4px 8px 24px rgba(0,0,0,.4);
+}
+/*Fim portfolio*/
+
 /*Responsive*/
 @media only screen and (min-width:600px) and (max-width:800px){
     body {
@@ -158,9 +170,6 @@ a:hover{
     header {
         height: 55vh;
         margin-bottom: 5%;
-    }
-    footer h4{
-        display: none;
     }
     .about{
         display: inline;
