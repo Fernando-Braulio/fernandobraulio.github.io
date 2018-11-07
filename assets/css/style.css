@@ -134,19 +134,10 @@ footer {
 a:hover{
     text-decoration: underline;
 }
-
-/*Portfolio version 1*/
-.portfolio{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.portfolio img{
-    flex-basis: 25%;
-    max-width: 25%;
-    margin: 1%;
-    box-shadow: -4px 8px 24px rgba(0,0,0,.4);
+.imgportfolio{
+    display: inline-block;
+    height: 199px;
+    margin: 3px;
 }
 /*Fim portfolio*/
 
@@ -161,6 +152,9 @@ a:hover{
     .textBox{
         width: 100%;
         float: none;
+    }
+    .imgportfolio{
+        height: 180px;
     }
 }
 @media only screen and (max-width:600px){
@@ -192,4 +186,7 @@ a:hover{
         height: 120px;
         margin-top: 5%;
     }
+    .imgportfolio{
+        height: 100px;
+    } 
 }
